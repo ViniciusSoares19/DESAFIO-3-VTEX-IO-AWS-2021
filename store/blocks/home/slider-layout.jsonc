@@ -1,0 +1,35 @@
+{
+    "list-context.image-list#home": {
+        "children": [
+            "slider-layout#home-images"
+        ],
+        "props": {
+            "height": 650,
+            "images": [
+                {
+                    "image": "https://hiringcoders2021.vtexassets.com/assets/vtex.file-manager-graphql/images/6bae00c7-72a1-4084-a6e3-4b67f4e9dcca___16132ec7845551c9152db1b9843a74a4.png"
+                },
+                {
+                    "image": "https://hiringcoders2021.vtexassets.com/assets/vtex.file-manager-graphql/images/1237d444-6eeb-412d-9ba2-a71ca09eaa2e___e5b64c890c31022f8b8f57ad22bebf24.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#home-images": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": false,
+            "showNavigationArrows": "desktopOnly",
+            "arrowSize": 16,
+            "blockClass": "carousel",
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            }
+        }
+    }
+}    

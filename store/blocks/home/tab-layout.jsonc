@@ -1,0 +1,67 @@
+{
+    //*** início flex-tab***//  
+    "tab-layout#landp": {
+        "children": [
+            "tab-list",
+            "tab-content"
+        ],
+        "props": { 
+            "blockClass": "home", 
+            "defaultActiveTabId": "home1" 
+                } 
+    },
+    "tab-list": {
+        "children": [
+            "tab-list.item#cam",
+            "tab-list.item#cal",
+            "tab-list.item#jaq",
+            "tab-list.item#fit",
+            "tab-list.item#mod",
+            "tab-list.item#ber",
+            "tab-list.item#ace"
+        ]
+    },
+    "tab-list.item#cam": {
+        "props": {
+            "tabId": "Camisetas",
+            "label": "CAMISETAS"
+        }
+    },
+    "tab-list.item#cal": {
+        "props": {
+            "tabId": "Calças",
+            "label": "CALÇAS"
+        }
+    },
+    "tab-list.item#jaq": {
+        "props": {
+            "tabId": "Jaquetas",
+            "label": "JAQUETAS"
+        }
+    },
+    "tab-list.item#fit": {
+        "props": {
+            "tabId": "Fitness",
+            "label": "FITNESS"
+        }
+    },
+    "tab-list.item#mod": {
+        "props": {
+            "tabId": "ModaPraia",
+            "label": "MODA PRAIA"
+        }
+    },
+    "tab-list.item#ber": {
+        "props": {
+            "tabId": "Bermudas",
+            "label": "BERMUDAS"
+        }
+    },
+    "tab-list.item#ace": {
+        "props": {
+            "tabId": "Acessórios",
+            "label": "ACESSÓRIOS"
+        }
+    }
+    //***fim flex-tab***//
+}

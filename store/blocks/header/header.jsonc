@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,7 +20,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": [
+      "flex-layout.row#desktop"
+    ]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -28,8 +36,6 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
       "minicart.v2"
     ]
   },
@@ -42,21 +48,27 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "logo": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "https://hiringcoders2021.vtexassets.com/assets/vtex.file-manager-graphql/images/c4daba97-b261-42b9-9521-82a9f9b8a121___2f7853b5b7e7dcb5b4ef8f4db6868e01.png",
+      "width": "150"
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [
@@ -72,8 +84,5 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
 }

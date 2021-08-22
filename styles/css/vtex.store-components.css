@@ -1,0 +1,49 @@
+.searchBarContainer{
+    width: 720px;
+    margin-right: 8rem;
+}
+::placeholder{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: none;
+    border-bottom: thin solid #ffffff;
+    border-radius: 0;
+}
+.searchBarContainer :global(.vtex-input__suffix){
+    background: transparent;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+    background: transparent;
+    color: #50dd05;
+}
+.searchBarIcon--search  {
+    color: #ffffff;
+}
+.imageElement{
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    margin-left: 15rem;
+    margin-right: 11rem;
+    padding-top: 0.2rem;
+    padding-bottom: -3rem;
+    top: -0.2rem;
+}
+.carouselGaleryThumbs{
+    display: none;
+}
+.productImagesContainer{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+}

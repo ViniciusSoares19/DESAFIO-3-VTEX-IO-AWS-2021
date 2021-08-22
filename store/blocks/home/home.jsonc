@@ -1,0 +1,23 @@
+{
+  "store.home": {
+    "blocks": [
+      "tab-layout#landp",
+      "list-context.product-list#landp",
+      "list-context.image-list#home",
+      "rich-text",
+      //"product-rating-summary",
+      "search-result-layout.customQuery#home",
+      //"flex-layout.row",
+      "footer-layout"
+    ]
+  },
+  "rich-text": {
+    "props": {
+      "text": "**PRODUTOS EM DESTAQUE**",
+      "textColor": "c-on-base--inverted",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}

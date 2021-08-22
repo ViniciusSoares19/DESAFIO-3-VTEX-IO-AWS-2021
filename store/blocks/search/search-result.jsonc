@@ -1,0 +1,30 @@
+{/* inicio search-result*/
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip",
+        "maxItemsPerPage": 8,
+        "blockClass": "sr"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#landp",
+      "search-result-layout.mobile"
+    ]
+  },
+  "search-result-layout.desktop#landp": {
+    "children": [
+      "search-content#landp"
+    ],
+    "props": {
+      "preventRouteChange": true
+    }
+  },
+  "search-content#landp": {
+    "blocks": [
+      "gallery#landp",
+      "not-found"
+    ]
+  }/*Fim serach-result*/
+}

@@ -1,0 +1,17 @@
+/* estilização da arrow e dots slider */
+.sliderArrows--carousel{
+    color: white;
+    margin-left: -3rem;
+    margin-right: -6rem;
+    margin-top: 22rem;
+    padding: 22rem;
+}
+.sliderArrows--carousel:hover{
+    color: #59FF00;
+}
+.paginationDotsContainer--carousel{
+    margin-top: -5rem;
+}
+.slideChildrenContainer--carousel{
+    background: #303030;
+}

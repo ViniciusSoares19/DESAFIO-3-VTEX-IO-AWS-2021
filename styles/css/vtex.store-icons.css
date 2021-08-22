@@ -1,0 +1,9 @@
+/*style cart icon*/
+.cartIcon{
+    color: #59FF00;
+    padding-right: 6rem;
+}
+
+.cartIcon--minicart-empty-state {
+    color: #59FF00;
+}

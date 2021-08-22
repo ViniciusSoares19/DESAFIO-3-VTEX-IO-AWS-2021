@@ -1,0 +1,17 @@
+.container{
+    margin-right: 150px;
+}
+.element--Aoba {
+    width: 400px;
+    height: 580px;
+    padding-right: 9rem;
+    padding-left: 35px;
+    background: #424242;
+}
+.productBrand{
+    color: #fff;
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1.6;
+}

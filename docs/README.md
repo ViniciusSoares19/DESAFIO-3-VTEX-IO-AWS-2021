@@ -1,62 +1,71 @@
-# Minimum Boilerplate Theme
+Título do projeto
+Minimum Boilerplate Theme - Projeto teste
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+🚀 Começando
+O tema padrão mínimo é o modelo básico de fachada de loja baseado no VTEX IO Store Framework.
 
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme). 
+Deve ser usado apenas quando você deseja iniciar um novo tema de loja sem nenhuma configuração predefinida, como é o caso com Tema de Loja .
 
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
+Enquanto Store Theme oferece aos desenvolvedores uma estrutura de fachada de loja padrão pronta para uso, o Minimum Boilerplate Theme permitirá que você crie sua loja livremente a partir do zero.
 
-## Configuration
+Configuração
 
-### Step 1 -  Basic setup
+Etapa 1 - configuração básica
+Acesse o guia de configuração básica do VTEX IO e siga todas as etapas fornecidas.
 
-Access the VTEX IO [basic setup guide](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) and follow all the given steps. 
+Ao final da configuração, você deve ter a interface de linha de comando VTEX (Toolbelt) instalada junto com um espaço de trabalho do desenvolvedor no qual você pode trabalhar.
 
-By the end of the setup, you should have the VTEX command line interface (Toolbelt) installed along with a developer workspace you can work in.
+Etapa 2 - Clonando o repositório de Tema de Boilerplate Mínimo
+Clone este repositório em seus arquivos locais para poder começar a trabalhar com eficácia nele.
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
+Em seguida, acesse o diretório do repositório usando seu terminal.
 
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
+Etapa 3 - Editando o Manifest.json
+Uma vez no diretório do repositório, é hora de editar o manifest.jsonarquivo Minimum Boilerplate .
 
-Then, access the repository's directory using your terminal. 
+Assim que estiver no arquivo, você deve substituir os valores vendore account. vendoré o nome da conta na qual você está trabalhando e accounté qualquer coisa que você queira nomear para o seu tema. Por exemplo:
 
-### Step 3 - Editing the `Manifest.json`
-
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file. 
-
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
-
-```json
 {
   "vendor": "storecomponents",
   "name": "my-test-theme",
 }
-```
 
-### Step 4 -  Installing required apps
+Etapa 4 - Instalando os aplicativos necessários
+Para utilizar loja Framework e trabalhar em seu tema loja, é necessário ter os dois vtex.store-sitemape vtex.storeinstalado.
 
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
+Execute vtex list e verifique se esses aplicativos já estão instalados.
 
-Run  `vtex list`  and check whether those apps are already installed. 
+Se não forem, execute o seguinte comando para instalá-los: vtex install vtex.store-sitemap vtex.store -f
 
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
+Etapa 5 - Desinstalar qualquer tema existente
+Ao executar vtex list, você pode verificar se algum tema está instalado.
 
-### Step 5 -  Uninstalling any existing theme
+É comum já ter um vtex.store-theme instalado quando você inicia o processo de desenvolvimento da fachada da loja.
 
-By running `vtex list`,  you can verify if any theme is installed.
+Portanto, se você encontrá-lo na lista do aplicativo, copie seu nome e use-o junto com o comando vtex uninstall. Por exemplo:
 
-It is common to already have a `vtex.store-theme`  installed when you start the store's front development process. 
-
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
-
-```json
 vtex uninstall vtex.store-theme
-```
 
-### Step 6- Run and preview your store
+Etapa 6 - Executar e visualizar sua loja
+Então chegou a hora de fazer upload de todas as alterações feitas em seus arquivos locais para a plataforma. Para isso, use o vtex linkcomando.
 
-Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
+Se o processo é executado sem erros, a seguinte mensagem será exibida: App linked successfully. Em seguida, execute o vtex browsecomando para abrir uma janela do navegador com sua loja vinculada.
 
-If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
+Isso permitirá que você veja as alterações aplicadas em tempo real, por meio da conta e do espaço de trabalho em que está trabalhando.
 
-This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+🛠️ Construído com
+Nesse projeto foi usado o editor VisualCode
+
+📌 Versão
+Foi usada a versão 0.1.1 para fins de estudos
+
+✒️ Autores
+Vinícius Soares - Trabalho Inicial
+
+📄 Licença
+Este projeto está sob a licença (0.1.1).
+
+🎁 Expressões de gratidão
+Esse projeto apesar de básico para desenvolvedores experientes, tive bastante dificuldade e não pude concluir no prazo estipulado, mas fica aqui o grande aprendizado para pode me dedicar cada vez mais e sempre melhorar como pessoa e profissional. Simplesmente fiquei muito feliz em poder participar o treinamento proposto pela Gama Academy e Vtex 📢
+Agradeço a Gama Academy e Vtex por serem empresas acima de tudo humana, isso mostra o quanto outras empresas devem se espelhar em vocês.
+Fica aqui o meu muito Obrigado publicamente! 🤓.

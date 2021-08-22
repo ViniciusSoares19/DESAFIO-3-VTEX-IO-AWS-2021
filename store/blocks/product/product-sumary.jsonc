@@ -1,0 +1,110 @@
+{ /*inicio product-sumary*/
+    "list-context.product-list#landp": {
+        "blocks": [
+            "product-summary"
+        ]
+    },
+    "gallery#landp": {
+        "props": {
+            "layouts": [
+                {
+                    "name": "grid",
+                    "component": "GridSummary",
+                    "itemsPerRow": {
+                        "(min-width:1200px)": 2,
+                        "desktop": 2,
+                        "tablet": 2,
+                        "phone": 1
+                    }
+                },
+                {
+                    "name": "list",
+                    "component": "ListSummary",
+                    "itemsPerRow": 1
+                }
+            ],
+            "ListSummary": "product-summary.shelf#landp",
+            "GridSummary": "product-summary.shelf#landp"
+        }
+    },
+    "product-summary.shelf#landp": {
+        "children": [
+            "modal-trigger#landp",
+            "product-summary-name",
+            "product-images#landp",
+            "vtex.product-highlights@2.x:product-highlights#pre",
+            "vtex.product-highlights@2.x:product-highlights#val",
+            "product-summary-price",
+            "add-to-cart-button#landp"
+        ],
+        "props": {
+            "blockClass": [
+                "Aoba",
+                "hpa-play"
+            ]
+        }
+    },
+    "product-images#landp": {
+        "props": {
+            "showNavigationArrows": true,
+            "showPaginationDots": true
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights#pre": {
+        "children": [
+            "icon-star",
+            "product-highlight-text#pre"
+        ]
+    },
+    "product-highlight-text#pre": {
+        "props": {
+            "message": "{highlightPRÉ-LANÇAMENTO}",
+            "link": ""
+        }
+    },
+    "vtex.product-highlights@2.x:product-highlights#val": {
+        "children": [
+            "icon-star",
+            "product-highlight-text#val"
+        ]
+    },
+    "product-highlight-text#val": {
+        "props": {
+            "message": "{highlightVALIDAÇÃO A PARTIR DE 06/08/2021}",
+            "link": ""
+        }
+    },
+    "add-to-cart-button#landp": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "VER DETALHES"
+        }
+    },
+    "modal-trigger#landp": {
+        "children": [
+            "rich-text#landp",
+            "modal-layout#landp"
+        ]
+    },
+    "rich-text#landp": {
+        "props": {
+            "text": "Vídeo"
+        }
+    },
+    "modal-layout#landp": {
+        "children": [
+            "video#landp"
+        ]
+    },
+    "video#landp": {
+        "props": {
+            "width": "100%",
+            "height": "200px",
+            "loop": false,
+            "autoPlay": true,
+            "muted": false,
+            "src": "https://youtu.be/vVNF4OASRDI",
+            "blockClass": "videoEl"
+        }
+    }
+}

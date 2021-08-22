@@ -1,0 +1,12 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product"
+    ]
+  },
+  "flex-layout.row#product": {
+    "children": [
+      "add-to-cart-button"
+    ]
+  }
+}
